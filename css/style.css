@@ -931,17 +931,48 @@ blockquote::after {
 		font-size: 42px;
 	}
 }
-/*=============== CREATOR CREDIT ===============*/
+/*=============== CREATOR CREDIT ALIGNMENT ===============*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .creator-credit {
-    margin-top: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 15px auto 10px;
     font-size: 11px;
     letter-spacing: 1px;
     color: var(--primary-color);
-    opacity: 0.9;
     font-family: 'Poppins', sans-serif;
+    opacity: 0.9;
 }
 
 .creator-credit span {
     color: var(--second-color);
     font-size: 13px;
+}
+
+/* Mobile Alignment */
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+        padding: 0 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .creator-credit {
+        width: 100%;
+        text-align: center;
+        margin: 12px auto;
+        font-size: 11px;
+    }
 }
