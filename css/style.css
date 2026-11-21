@@ -931,3 +931,17 @@ blockquote::after {
 		font-size: 42px;
 	}
 }
+/*=============== CREATOR CREDIT ===============*/
+.creator-credit {
+    margin-top: 15px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    opacity: 0.9;
+    font-family: 'Poppins', sans-serif;
+}
+
+.creator-credit span {
+    color: var(--second-color);
+    font-size: 13px;
+}
